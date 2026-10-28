@@ -99,6 +99,8 @@ Console.WriteLine(string.Join(",", test));  // should write 1,3,5,8
 
 int[] storrelse = { 5000, 10000, 20000, 40000 };
 
+Console.WriteLine("OPGAVE 6");
+Console.WriteLine();
 Console.WriteLine("Tal \t Selection (ms) \t Array.Sort (ms)");
 
 foreach (int n in storrelse)
