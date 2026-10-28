@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="Dag1/Dag1.csproj" />
+  <Project Path="Dag2/Dag2.csproj" Id="e398fd92-4a9c-4102-92b8-6e55c5d43d6a" />
+</Solution>
