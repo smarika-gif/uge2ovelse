@@ -15,7 +15,7 @@ namespace Dag3
             public Node? Højre;       
 
             // Property: true when the node has no children.
-            // It has only "get", so it is calculated each time you ask for it
+            // It has only "get", so it is calculated each time asked for it
             public bool ErBlad
             {
                 get { return Venstre == null && Højre == null; }

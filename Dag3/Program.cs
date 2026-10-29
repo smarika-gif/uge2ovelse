@@ -3,14 +3,14 @@ using System.Text;
 
 
 //OPGAVE 2
-Node a = new Node(97, 5);     // leaf for 'a' with frequency 5
-Node b = new Node(98, 2);     // leaf for 'b' with frequency 2
-Node indre = new Node(b, a, 256);   // inner node with b on the left, a on the right
+Node a = new Node(97, 5);     
+Node b = new Node(98, 2);     
+Node indre = new Node(b, a, 256);   
 
-Console.WriteLine(a.ErBlad);       // True
-Console.WriteLine(indre.ErBlad);   // False
-Console.WriteLine(indre.Frekvens); // 7
-Console.WriteLine(indre.Id);       // 256
+Console.WriteLine(a.ErBlad);       
+Console.WriteLine(indre.ErBlad);   
+Console.WriteLine(indre.Frekvens); 
+Console.WriteLine(indre.Id);       
 
 Console.WriteLine();
 
@@ -20,9 +20,9 @@ int[] frekvenser = Kompression.TælFrekvenser(data);
 
 Node? rod = Huffman.BygTræMedListe(frekvenser);
 
-Console.WriteLine(rod.Frekvens);   // writes 11
-Console.WriteLine(rod.Id);         // writes 259
-Console.WriteLine(rod.ErBlad);     // False
+Console.WriteLine(rod.Frekvens);   
+Console.WriteLine(rod.Id);         
+Console.WriteLine(rod.ErBlad);     
 
 Console.WriteLine();
 

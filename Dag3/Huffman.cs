@@ -79,10 +79,10 @@ namespace Dag3
             }
             else
             {
-                // An inner node: print * and the frequency (the sum of the children)
+                
                 Console.WriteLine($"{ind}{side} * ({node.Frekvens})");
 
-                // recursive calls: the children gets 4 MORE spaces than this node
+                
                 UdskrivTre(node.Venstre, ind + "    ", "0: ");
                 UdskrivTre(node.Højre, ind + "    ", "1: ");
             }
