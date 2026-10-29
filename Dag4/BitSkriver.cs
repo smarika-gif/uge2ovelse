@@ -21,7 +21,7 @@ namespace Dag4
         public void SkrivBit(int bit)
         {
             bit = bit & 0b1;                  //keep only the lowest bit
-            aktuelByte = aktuelByte << 1;     // push one place to the left
+            aktuelByte = aktuelByte << 1;     // shifts one place to the left
             aktuelByte = aktuelByte | bit;    // put the new bit at the bottom
             antalBits += 1;
             if (antalBits == 8)                // the byte is full (1 byte = 8 bits)

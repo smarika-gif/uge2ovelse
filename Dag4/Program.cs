@@ -93,4 +93,24 @@ Console.WriteLine();
 int[] tilbage = Header.LæsFrekvenser(header);
 Console.WriteLine(tilbage[97]);
 Console.WriteLine(tilbage[99]);
+Console.WriteLine();
 
+// Opgave 6
+byte[] test = Encoding.UTF8.GetBytes("abracadabra");     // changes text into bytes
+byte[] komp = Kompressor.Komprimer(test);
+
+Console.WriteLine(komp.Length);
+Console.WriteLine();
+
+// Opgave 7
+
+byte[] test2 = Encoding.UTF8.GetBytes("abracadabra");
+byte[] komp2 = Kompressor.Komprimer(test2);
+byte[] tilbage2 = Kompressor.Dekomprimer(komp2);
+
+Console.WriteLine(Encoding.UTF8.GetString(tilbage2));
+Console.WriteLine();
+
+// opgave 8 
+
+Copy_methods_dag1.KoerTests(Kompressor.Komprimer, Kompressor.Dekomprimer);
