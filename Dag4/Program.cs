@@ -114,3 +114,22 @@ Console.WriteLine();
 // opgave 8 
 
 Copy_methods_dag1.KoerTests(Kompressor.Komprimer, Kompressor.Dekomprimer);
+Console.WriteLine();
+
+// Opgave 9
+string original = @"..\..\..\tekst.txt";
+string pakket = @"..\..\..\tekst.huff";
+string udpakket = @"..\..\..\tekst2.txt";
+
+Kompressor.KomprimerFil(original, pakket);
+Kompressor.DekomprimerFil(pakket, udpakket);
+
+byte[] a = File.ReadAllBytes(original);
+byte[] g = File.ReadAllBytes(pakket);
+
+Console.WriteLine($"Original: {a.Length} bytes");
+Console.WriteLine($"Komprimeret: {new FileInfo(pakket).Length} bytes");
+Console.WriteLine(Kompression.ErEns(a, g) ? "Identisk: OK": "Identisk: FEJL");   // condition ? "x" : "y" is a short if/else
+                                                                                 // (if the condition is true you get the first text, otherwise the second.)
+
+Console.WriteLine();

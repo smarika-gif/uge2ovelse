@@ -6,6 +6,7 @@ namespace Dag4
 {
     internal class Header
     {
+        // Opgave 5
         // makes the header: the length first, then all 256 frequencies
         public static byte[] LavHeader(int længde, int[] frekvenser)
         {

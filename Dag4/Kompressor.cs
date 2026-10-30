@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using System.IO;
 
 namespace Dag4
 {
@@ -87,6 +88,21 @@ namespace Dag4
             }
             return resultant;
 
+        }
+
+        // reads a file, compress it, saves the result
+        public static void KomprimerFil(string ind, string ud)     // ind: is the file to read, and ud: is the file to write
+        {
+            byte[] råData = File.ReadAllBytes(ind);
+            byte[] komprimeret = Komprimer(råData);
+            File.WriteAllBytes(ud, komprimeret);
+        }
+
+        public static void DekomprimerFil(string ind, string ud)
+        {
+            byte[] komprimeret = File.ReadAllBytes(ind);
+            byte[] råData = Dekomprimer(komprimeret);
+            File.WriteAllBytes(ud, råData);          //File.WriteAllBytes: creates the file, or overwrites it if exists
         }
 
     }

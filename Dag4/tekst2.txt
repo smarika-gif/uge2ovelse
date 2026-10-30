@@ -1,0 +1,17 @@
+Online influencers claim you need to learn dozens of technologies to become a good .NET developer.
+This creates unnecessary anxiety and distracts from what actually matters. Nemanja argues you should focus on mastering
+.NET fundamentals instead of chasing every new tool. The key areas include understanding .NET internals, modern C# 
+features, performance optimization, and core libraries. Learning specialized technologies like Redis or GraphQL is 
+only needed when your job requires them.
+
+Online influencers claim you need to learn dozens of technologies to become a good .NET developer.
+This creates unnecessary anxiety and distracts from what actually matters. Nemanja argues you should focus on mastering 
+.NET fundamentals instead of chasing every new tool. The key areas include understanding .NET internals, modern 
+C# features, performance optimization, and core libraries. Learning specialized technologies like Redis or GraphQL 
+is only needed when your job requires them.
+
+Online influencers claim you need to learn dozens of technologies to become
+a good .NET developer. This creates unnecessary anxiety and distracts from what actually matters. 
+Nemanja argues you should focus on mastering .NET fundamentals instead of chasing every new tool. The key areas 
+include understanding .NET internals, modern C# features, performance optimization, and core libraries. Learning 
+specialized technologies like Redis or GraphQL is only needed when your job requires them.
